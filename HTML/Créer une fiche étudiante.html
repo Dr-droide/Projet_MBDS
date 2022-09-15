@@ -4,6 +4,7 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>Créer une fiche etudiante</title>
+		<link href="Créer une fiche etudiante.css" rel="stylesheet" type="text/css" />
 	</head>
 	
 	<body>
@@ -18,41 +19,43 @@
 			</div>
 		</header>
 		
-		<form>
-			<p> Information étudiant</p>
+		<form id="t1">
+			<div id="header2">
+			<p style="text-indent:250px; font-size : 25px;"> Information étudiant</p><br>
+			</div>
 			<div>
-				<center><label for="name">Nom :</label>
+				<center><label for="name" style="font-size : 20px;">Nom :</label>
 				<input type="text" id="name" name="user_name">
 			</div>
 			<div>
-				<center><label for="prenom">Prénom:</label>
+				<center><label for="prenom" style="font-size : 20px;">Prénom:</label>
 				<input type="text" id="prenom" name="user_prenom">
 			</div>
 			<div>
-				<center><label for="date">Date de naissance:</label>
+				<center><label for="date" style="font-size : 20px;">Date de naissance:</label>
 
 				<input type="date" id="date" name="trip-date"
 				min="1996-01-01" max="2022-12-31">
 			</div>
 			<div>
-				<center><label for="tel">Numéro de téléphone:</label>
+				<center><label for="tel" style="font-size : 20px;">Numéro de téléphone:</label>
 				<input type="tel" id="tel" name="tel"
 				pattern = "[0-9]{10}" required>
 			</div>
 			<div>
-				<center><label for="adress">Adresse:</label>
+				<center><label for="adress" style="font-size : 20px;">Adresse:</label>
 				<input type="text" id="adress" name="adress">
 			</div>
 			<div>
-				<center><label for="mail">e-mail&nbsp;:</label>
+				<center><label for="mail" style="font-size : 20px;">e-mail&nbsp;:</label>
 				<input type="email" id="mail" name="user_mail">
 			</div>
 			<div>
-				<center><label for="ine">INE:</label>
+				<center><label for="ine" style="font-size : 20px;">INE:</label>
 				<input type="text" id="ine" name="ine">
 			</div>
 			<div>
-				<center><label> Boursier </label>
+				<center><label style="font-size : 20px;"> Boursier </label>
 				<select>
 					<option> </option>
 					<option>OUI</option>
@@ -60,7 +63,7 @@
 				</select>
 			</div>
 			<div>
-				<center><label> Statut </label>
+				<center><label style="font-size : 20px;"> Statut </label>
 				<select>
 					<option> </option>
 					<option>Etudiant</option>
@@ -68,8 +71,8 @@
 				</select>
 			</div><br>
 			<div>
-				<center><a href="Consulter fiche etudiante.html"><input type="button" value="Valide">
-			</div>
+				<center><a href="Consulter fiche etudiante.html"><input type="button" value="Validé" style="font-size : 15px;width:60px;height:25px; background-color: navy; color:white;">
+			</div><br>
 			
 		</form>
 		
